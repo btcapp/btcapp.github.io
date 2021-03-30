@@ -1,436 +1,53 @@
-<!DOCTYPE html>
-<!-- saved from url=(0029)http://www.6mi8.com/jsbe.html -->
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Index</title>
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
-    <meta name="apple-mobile-web-app-title" content="bridge测试">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta content="telephone=no" name="format-detection">
-    <meta name="baidu-tc-cerfication" content="ba07d70ead40fe3171a72dc4099ed4e5">
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css" media="all">
-    .box {
-      padding: 10px;
-    }
-
-    .box div {
-      width: 100%;
-    }
-
-    .container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
-
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="panel panel-primary">
-        <div class="panel-heading text-center">
-            <h1>bridge.js 测试页面</h1>
-        </div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success updateShareButton">分享按钮1111</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success updateTitle">设置标题</div>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success refreshPage">刷新页面</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-warning closePage">关闭页面</div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success getAppVersion">获取APP版本信息</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success goAppLogin">
-                        拉起APP登录，成功后回调(回调方法名appLoginCallback()
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-warning getAppToken">获取token，用于判断是否登录</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-warning updateMediaShareButton">小程序分享</div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-warning testJsconsole.log">测试弹出框</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-warning updateImageShareButton">纯图片分享</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-warning openH5Screen">打开H5链接新页面</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success appRouter">内部打开百度</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success appRouter1">外部打开百度</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success appRouter2">跳转检测报告</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success appRouter3">打电话</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success appRouter4">跳转充值</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success appRouter5">实名认证</div>
-                </div>
-
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success appRouter6">会员等级</div>
-                </div>
-
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success appRouter7">收车券页面</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success showLoading">showLoading</div>
-                </div>
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success HideLoading">showLoading</div>
-                </div>
-
-                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success getStatusBarHeight">获取状态栏高度</div>
-                </div> 
-				<div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
-                    <div class="mg-10 btn btn-lg btn-success getUserInfo">获取用户信息</div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!DOCTYPE html> <html lang=en> <head> <meta charset=UTF-8> <!-- Primary Meta Tags --> <title>Yield Farming Info</title> <meta name=title content="Yield Farming Info"> <meta name=description content="&#x1F9D1;&#x200D;&#x1F33E; It ain't much, but it's honest work"> <!-- Open Graph / Facebook --> <meta property=og:type content=website> <meta property=og:url content=https://vfat.tools/ > <meta property=og:title content="Yield Farming Info"> <meta property=og:description content="&#x1F9D1;&#x200D;&#x1F33E; It ain't much, but it's honest work"> <meta property=og:image content=https://yieldfarming.info/img/thumbnail.png> <!-- Twitter --> <meta property=twitter:card content=summary_large_image> <meta property=twitter:url content=https://vfat.tools/ > <meta property=twitter:title content="Yield Farming Info"> <meta property=twitter:description content="&#x1F9D1;&#x200D;&#x1F33E; It ain't much, but it's honest work"> <meta property=twitter:image content=https://yieldfarming.info/img/thumbnail.png> <link rel=stylesheet href=/css/index.bbc01ff3f1ccf08af2edc06aeb146ff8.css> <link rel=preload href=/js/vendor.824f3456e4551ca57f929f0ab2b94d5c.js as=script> <link rel=prefetch href=/js/vendor.824f3456e4551ca57f929f0ab2b94d5c.js> <link rel=preload href=/js/app.32c4dccde6f22ea1652743082c6a4c5a.js as=script> <link rel=prefetch href=/js/app.32c4dccde6f22ea1652743082c6a4c5a.js> <meta name=theme-color content=#ffffff> <link rel=icon href=/favicon.svg> <link rel=apple-touch-icon href=/apple-touch-icon.png> <link rel=manifest href=/manifest.json> </head> <div id=quick class=modal> <form class=modal-content id=quick-form> <input autocomplete=off id=quick-input class=modal-input> <ul id=quick-dropdown></ul> </form> </div> <body> <pre class=container>
+<div>
+<a href=/ >Home</a> - <a href=/bsc/ >BSC</a> - <a href=/heco/ >HECO</a> - <a href=/heco/ >MATIC</a> - <a href=/seigniorage/ >Seigniorage</a>
 </div>
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
-<script src="jsbridge.js"></script>
-<script type="text/javascript">
-  var _toStr = Object.prototype.toString
+<div>
+<a href="https://www.youtube.com/watch?v=D8RZhK1zcs0" target=_blank>Youtube tutorial!</a> by the excellent <a href=https://twitter.com/gabrielhaines target=_blank>Gabriel Haines</a>
+</div>
+
+---Pool Provider---     --------LP--------          --Reward Tokens--  --INFO--
+     Yam                 <a href=yam/ >YAM-ETH SLP</a>                 YAM                https://yam.finance/farm
+     yAxis               <a href=yaxis/ >Various</a>                     yAxis              https://yaxis.io/farms
+     Pickle              <a href=pickle/ >Various</a>                     Pickle             https://pickle.finance/farms
+     HolyHeld            <a href=holy/ >Various</a>                     HOLY               https://app.holyheld.com/
+     Stabilize           <a href=stabilize/ >Various</a>                     STBZ               https://stabilize.finance
+     SwapShip            <a href=swapship/ >Various</a>                     SWSH,RTC           https://www.swapship.finance/staking
+     Alpha DEX           <a href=alphadex/ >Various</a>                     DEX                https://kitten.finance
+     Kitten              <a href=kitten/ >Various</a>                     kBASEv0            https://kitten.finance
+     Ichi                <a href=ichi/ >Various</a>                     Ichi               https://ichi.farm
+     TrueFi              <a href=truefi/ >Various</a>                     TRU                https://app.truefi.io/farm
+     Benchmark           <a href=benchmark/ >Various</a>                     MARK               https://launchpad.benchmarkprotocol.finance/pools
+     Basis               <a href=basis/ >Various</a>                     BAS,BAC            https://basis.cash
+     Badger              <a href=badger/ >Various</a>                     BADGER             https://app.badger.finance
+     PowerIndex          <a href=powerindex/ >Various</a>                     CVP                https://powerindex.io
+     UpDown              <a href=updown/ >UPDOWN / UPDOWN-ETH</a>         wETH               https://updown.finance
+     Build Finance       <a href=build/ >BUILD-ETH</a>                   bCRED              https://build.finance
+     Empty Set Dollar    <a href=esd/ >Various</a>                     ESD                https://app.emptyset.finance/
+     Dynamic Set Dollar  <a href=dsd/ >Various</a>                     DSD                https://dsd.finance/app
+     Basis Dollar        <a href=bsd/ >Various</a>                     BSD,BSDS           https://basisdollar.fi/
+     Frax Finance        <a href=frax/ >Various</a>                     FXS                https://app.frax.finance/
+     Debase              <a href=debase/ >Various</a>                     DEBASE,DEGOV       https://debaseonomics.io
+     1inch               <a href=1inch/ >Various</a>                     1INCH              https://1inch.exchange/#/dao/farming
+     MITH Cash           <a href=mithcash/ >Various</a>                     MIS,MIC            https://mith.cash
+     One Cash            <a href=onecash/ >Various</a>                     ONC,ONS            https://onecash.finance
+     Basis Gold          <a href=bsg/ >Various</a>                     BSG,BSGS           https://basis.gold
+     Harvest Finance     <a href=harvest-finance/ >Various</a>                     FARM               https://harvest.finance
+     Typhoon Cash        <a href=typhoon/ >Various</a>                     PHOON              https://typhoon.cash
+     Armor               <a href=armor/ >Various</a>                     ARMOR              https://armor.fi
+     Launchpool          <a href=lpool/ >Various</a>                     LPOOL              https://staking.launchpool.xyz/
+     Sushiswap           <a href=sushi/ >Various</a>                     SUSHI              https://app.sushi.com/farms
+     xSigma              <a href=xsigma/ >Various</a>                     SIG                https://app.xsigma.fi/stake
+     Alchemix            <a href=alcx/ >Various</a>                     ALCX               https://app.alchemix.fi/farms
+     DFX                 <a href=dfx/ >Various</a>                     DFX                https://v0.dfx.finance/
+     xToken              <a href=xtoken/ >Various</a>                     XTK                https://xtoken.cafe/app/dashboard
+
+*** Disclaimer ***
+
+I am in no way affiliated with the above projects, nor do I endorse them. Please do your own research before investing.
 
 
-  function _isObject(val) {
-    return _toStr.call(val) === "[object Object]"
-  }
-
-  function _isString(val) {
-    return _toStr.call(val) === "[object String]"
-  }
-
-  function showResult(result) {
-    if (_isObject(result)) {
-        console.log(JSON.stringify(result))
-    } else if (_isString(result)) {
-        console.log(result)
-    } else if (result == null) {
-        console.log("返回结果为空")
-    } else {
-        console.log("请返回合法的 JSON 数据")
-    }
-  }
-
-  function appLoginCallback(result) {
-    console.log("appLoginCallback 执行,参数: " + result)
-  }
-
-  $(function () {
-    // 点击 "分享按钮" 按钮
-    $(".updateShareButton").on("click", function updateShareButton() {
-      var result = window.bridge.updateShareButton({
-        shareContent: "《罗曼蒂克消亡史》12月16日上映",
-        shareImg: "https://appnfs.wepiao.com/uploads/active/20161202/11/8da54c69e38297898b9a4d8df7a944bd.jpg",
-        shareTitle: "阿娇当小五，章子怡当小六，葛大爷演的这个黑帮大佬艳福不浅",
-        platform: [{
-          type: "1",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/3/index.html"
-        }, {
-          type: "2",
-          shareType: "1",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/3/index.html"
-        }, {
-          type: "3",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }, {
-          type: "4",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }, {
-          type: "5",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }, {
-          type: "6",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }]
-      }, function (result) {
-        showResult(result)
-      })
-    })
-
-    // 点击 "小程序分享按钮" 按钮
-    $(".updateMediaShareButton").on("click", function updateMediaShareButton() {
-      var result = window.bridge.updateShareButton({
-        shareContent: "推荐好友卖车 拿500元现金",
-        shareImg: "http://cdn01.ttpaicdn.com/ttpai/appimages/cons4636/sharelogo.png",
-        shareTitle: "天天拍车推荐有礼",
-        platform: [{
-          type: "1",
-          shareType: "2",
-          originalId: "gh_ccd0b215fc5f",
-          mediaPath: "pages/sell-car/sell-car",
-          mediaImage: "http://cdn01.ttpaicdn.com/ttpai/appimages/cons4636/bangmaixiaochengxu.png",
-          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
-        }, {
-          type: "2",
-          shareType: "0",
-          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
-        }, {
-          type: "3",
-          shareType: "0",
-          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
-        }, {
-          type: "4",
-          shareType: "0",
-          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
-        }, {
-          type: "5",
-          shareType: "0",
-          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
-        }, {
-          type: "6",
-          shareType: "0",
-          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
-        }]
-      }, function (result) {
-        showResult(result)
-      })
-    })
-
-    // 点击 "设置标题" 按钮
-    $(".updateTitle").on("click", function updateTitle() {
-      var result = window.bridge.updateTitle({
-        title: "我是新标题"
-      }, function (result) {
-        showResult(result)
-      })
-    })
-
-    // 点击 "刷新页面" 按钮
-    $(".refreshPage").on("click", function refreshPage() {
-      var result = window.bridge.refreshPage(function (result) {
-        showResult(result)
-      })
-    })
-
-    // 点击 "关闭页面" 按钮
-    $(".closePage").on("click", function closePage() {
-      var result = window.bridge.closePage(function (result) {
-        showResult(result)
-      })
-    })
-
-    // 点击 "获取APP版本信息" 按钮
-    $(".getAppVersion").on("click", function getAppVersion() {
-      var result = window.bridge.getAppVersion(function (result) {
-        return showResult(result)
-      })
-    })
-    // 点击 "APP登录回调" 按钮
-    $(".goAppLogin").on("click", function goAppLogin() {
-      window.bridge.goAppLogin(function (result) {
-        showResult(result)
-      })
-    })
-    // 点击 "获取token" 按钮
-    $(".getAppToken").on("click", function getAppToken() {
-      var result = window.bridge.getAppToken(function (result) {
-        showResult(result)
-      })
-    })
-	//显示Loading
-	$(".showLoading").on("click", function showLoading() {
-      var result = window.bridge.showLoading({
-        "showLoading": true
-      }, function () {
-        showResult("显示Loading")
-      })
-    })
-	//隐藏Loading
-	$(".HideLoading").on("click", function showLoading() {
-      var result = window.bridge.showLoading({
-        "showLoading": false
-      }, function () {
-        showResult("隐藏Loading")
-      })
-    })
-    //获取状态栏高度
-	$(".getStatusBarHeight").on("click", function getStatusBarHeight() {
-	  console.log("111111");
-      var result = window.bridge.getStatusBarHeight(function (result) {
-        showResult(result)
-      })
-    })
-	
-	 //获取用户信息
-	$(".getUserInfo").on("click", function getUserInfo() {
-	  console.log("111111");
-      var result = window.bridge.getUserInfo({
-        userInfoType: "dealerId,token"
-      }, function (result) {
-        showResult(result)
-      })
-    })
-
-    // 点击 "测试弹出框" 按钮
-    $(".testJsconsole.log").on("click", function testJsconsole.log() {
-      console.log("测试Jsconsole.log");
-    })
-
-    // 点击 "纯图片分享按钮" 按钮
-    $(".updateImageShareButton").on("click", function updateImageShareButton() {
-      var result = window.bridge.updateShareButton({
-        shareContent: "《罗曼蒂克消亡史》12月16日上映",
-        shareImg: "https://appnfs.wepiao.com/uploads/active/20161202/11/8da54c69e38297898b9a4d8df7a944bd.jpg",
-        shareTitle: "阿娇当小五，章子怡当小六，葛大爷演的这个黑帮大佬艳福不浅",
-        platform: [{
-          type: "1",
-          shareType: "1",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/3/index.html"
-        }, {
-          type: "2",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }, {
-          type: "3",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }, {
-          type: "4",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }, {
-          type: "5",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }, {
-          type: "6",
-          shareType: "0",
-          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
-        }]
-      }, function (result) {
-        showResult(result)
-      })
-    })
-
-    // 点击 "打开H5链接新页面" 按钮
-    $(".openH5Screen").on("click", function openH5Screen() {
-      var result = window.bridge.openH5Screen({
-        "title": "我是H5标题",
-        "url": "https://www.baidu.com/",
-        "closeCurrenScreen": "true"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-
-    $(".appRouter").on("click", function appRouter() {
-      var result = window.bridge.appRouter({
-        "url": "ttpaidea://dealer/jump_url?url=https%3a%2f%2fwww.baidu.com%2f&title=%e8%87%aa%e5%ae%9a%e4%b9%89%e6%a0%87%26%2f%e9%a2%98",
-        "finish": "true"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-    $(".appRouter1").on("click", function appRouter1() {
-      var result = window.bridge.appRouter({
-        "url": "ttpaidea://dealer/jump_url?url=https%3a%2f%2fwww.baidu.com%2f&type=1"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-    $(".appRouter2").on("click", function appRouter2() {
-      var result = window.bridge.appRouter({
-        "url": "ttpaidea://dealer/check_detail?auctionId=32535194&marketId=1004664"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-    $(".appRouter3").on("click", function appRouter3() {
-      var result = window.bridge.appRouter({
-        "url": "tel:123456789"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-    $(".appRouter4").on("click", function appRouter4() {
-      var result = window.bridge.appRouter({
-        "url": "ttpaidea://dealer/deposit"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-    $(".appRouter5").on("click", function appRouter5() {
-      var result = window.bridge.appRouter({
-        "url": "ttpaidea://dealer/id_verify"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-    $(".appRouter6").on("click", function appRouter5() {
-      var result = window.bridge.appRouter({
-        "url": "ttpaidea://dealer/member_level"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-    $(".appRouter7").on("click", function appRouter5() {
-      var result = window.bridge.appRouter({
-        "url": "ttpaidea://dealer/voucher"
-      }, function () {
-        showResult("打开成功")
-      })
-    })
-  })
-
-</script>
-
-
-</body>
-</html>
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+| <a href=https://twitter.com/vfat12 target=_blank>Twitter</a> - <a href=https://github.com/vfat-tools/vfat-tools target=_blank>Github</a> - <a href=https://gitcoin.co/grants/1809/vfattools-yield-farming-calculators target=_blank>Gitcoin</a> |
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+</pre> <script src=/js/vendor.824f3456e4551ca57f929f0ab2b94d5c.js></script> <script src=/js/app.32c4dccde6f22ea1652743082c6a4c5a.js></script> <script src=/js/data.958f5a3871e9f19ab545963fa9123b9a.js></script> <script src=/js/dollars.fdb049dce54fe90f87b06b8d1152e617.js></script> <script src=/js/ethers_helper.8894b06c0ac29c017398d9b68bc65d02.js></script> <script src=/js/dollar_helper.c22ff6c3a29ad6488ec68b64ef1736d2.js></script> <script src=/js/bsc_helpers.a0670a627123852dae678140ef43fdb4.js></script> <script src=/js/heco_helpers.ceb7deb1ddccf18e2bfa12cdd600b25e.js></script> <script src=/js/matic_helpers.eb212e5730b9979cc1370e9fe252edf4.js></script> <script src=/js/ ></script> </body> </html> 
