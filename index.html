@@ -1,37 +1,436 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://www.6mi8.com/jsbe.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-You can use the [editor on GitHub](https://github.com/btcapp/btcapp.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+    <title>Index</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-title" content="bridge测试">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="baidu-tc-cerfication" content="ba07d70ead40fe3171a72dc4099ed4e5">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css" media="all">
+    .box {
+      padding: 10px;
+    }
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    .box div {
+      width: 100%;
+    }
 
-### Markdown
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+            <h1>bridge.js 测试页面</h1>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success updateShareButton">分享按钮1111</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success updateTitle">设置标题</div>
+                </div>
 
-```markdown
-Syntax highlighted code block
+            </div>
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success refreshPage">刷新页面</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-warning closePage">关闭页面</div>
+                </div>
+            </div>
 
-# Header 1
-## Header 2
-### Header 3
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success getAppVersion">获取APP版本信息</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success goAppLogin">
+                        拉起APP登录，成功后回调(回调方法名appLoginCallback()
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-warning getAppToken">获取token，用于判断是否登录</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-warning updateMediaShareButton">小程序分享</div>
+                </div>
+            </div>
 
-- Bulleted
-- List
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-warning testJsconsole.log">测试弹出框</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-warning updateImageShareButton">纯图片分享</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-warning openH5Screen">打开H5链接新页面</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success appRouter">内部打开百度</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success appRouter1">外部打开百度</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success appRouter2">跳转检测报告</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success appRouter3">打电话</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success appRouter4">跳转充值</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success appRouter5">实名认证</div>
+                </div>
 
-1. Numbered
-2. List
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success appRouter6">会员等级</div>
+                </div>
 
-**Bold** and _Italic_ and `Code` text
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success appRouter7">收车券页面</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success showLoading">showLoading</div>
+                </div>
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success HideLoading">showLoading</div>
+                </div>
 
-[Link](url) and ![Image](src)
-```
+                <div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success getStatusBarHeight">获取状态栏高度</div>
+                </div> 
+				<div class="box col-sm-6 col-xs-6 col-lg-6 col-md-6">
+                    <div class="mg-10 btn btn-lg btn-success getUserInfo">获取用户信息</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+<script src="jsbridge.js"></script>
+<script type="text/javascript">
+  var _toStr = Object.prototype.toString
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+  function _isObject(val) {
+    return _toStr.call(val) === "[object Object]"
+  }
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/btcapp/btcapp.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+  function _isString(val) {
+    return _toStr.call(val) === "[object String]"
+  }
 
-### Support or Contact
+  function showResult(result) {
+    if (_isObject(result)) {
+        console.log(JSON.stringify(result))
+    } else if (_isString(result)) {
+        console.log(result)
+    } else if (result == null) {
+        console.log("返回结果为空")
+    } else {
+        console.log("请返回合法的 JSON 数据")
+    }
+  }
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+  function appLoginCallback(result) {
+    console.log("appLoginCallback 执行,参数: " + result)
+  }
+
+  $(function () {
+    // 点击 "分享按钮" 按钮
+    $(".updateShareButton").on("click", function updateShareButton() {
+      var result = window.bridge.updateShareButton({
+        shareContent: "《罗曼蒂克消亡史》12月16日上映",
+        shareImg: "https://appnfs.wepiao.com/uploads/active/20161202/11/8da54c69e38297898b9a4d8df7a944bd.jpg",
+        shareTitle: "阿娇当小五，章子怡当小六，葛大爷演的这个黑帮大佬艳福不浅",
+        platform: [{
+          type: "1",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/3/index.html"
+        }, {
+          type: "2",
+          shareType: "1",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/3/index.html"
+        }, {
+          type: "3",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }, {
+          type: "4",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }, {
+          type: "5",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }, {
+          type: "6",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }]
+      }, function (result) {
+        showResult(result)
+      })
+    })
+
+    // 点击 "小程序分享按钮" 按钮
+    $(".updateMediaShareButton").on("click", function updateMediaShareButton() {
+      var result = window.bridge.updateShareButton({
+        shareContent: "推荐好友卖车 拿500元现金",
+        shareImg: "http://cdn01.ttpaicdn.com/ttpai/appimages/cons4636/sharelogo.png",
+        shareTitle: "天天拍车推荐有礼",
+        platform: [{
+          type: "1",
+          shareType: "2",
+          originalId: "gh_ccd0b215fc5f",
+          mediaPath: "pages/sell-car/sell-car",
+          mediaImage: "http://cdn01.ttpaicdn.com/ttpai/appimages/cons4636/bangmaixiaochengxu.png",
+          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
+        }, {
+          type: "2",
+          shareType: "0",
+          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
+        }, {
+          type: "3",
+          shareType: "0",
+          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
+        }, {
+          type: "4",
+          shareType: "0",
+          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
+        }, {
+          type: "5",
+          shareType: "0",
+          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
+        }, {
+          type: "6",
+          shareType: "0",
+          shareUrl: "https://rec.ttpai.cn/newRec/index?source=H5BM"
+        }]
+      }, function (result) {
+        showResult(result)
+      })
+    })
+
+    // 点击 "设置标题" 按钮
+    $(".updateTitle").on("click", function updateTitle() {
+      var result = window.bridge.updateTitle({
+        title: "我是新标题"
+      }, function (result) {
+        showResult(result)
+      })
+    })
+
+    // 点击 "刷新页面" 按钮
+    $(".refreshPage").on("click", function refreshPage() {
+      var result = window.bridge.refreshPage(function (result) {
+        showResult(result)
+      })
+    })
+
+    // 点击 "关闭页面" 按钮
+    $(".closePage").on("click", function closePage() {
+      var result = window.bridge.closePage(function (result) {
+        showResult(result)
+      })
+    })
+
+    // 点击 "获取APP版本信息" 按钮
+    $(".getAppVersion").on("click", function getAppVersion() {
+      var result = window.bridge.getAppVersion(function (result) {
+        return showResult(result)
+      })
+    })
+    // 点击 "APP登录回调" 按钮
+    $(".goAppLogin").on("click", function goAppLogin() {
+      window.bridge.goAppLogin(function (result) {
+        showResult(result)
+      })
+    })
+    // 点击 "获取token" 按钮
+    $(".getAppToken").on("click", function getAppToken() {
+      var result = window.bridge.getAppToken(function (result) {
+        showResult(result)
+      })
+    })
+	//显示Loading
+	$(".showLoading").on("click", function showLoading() {
+      var result = window.bridge.showLoading({
+        "showLoading": true
+      }, function () {
+        showResult("显示Loading")
+      })
+    })
+	//隐藏Loading
+	$(".HideLoading").on("click", function showLoading() {
+      var result = window.bridge.showLoading({
+        "showLoading": false
+      }, function () {
+        showResult("隐藏Loading")
+      })
+    })
+    //获取状态栏高度
+	$(".getStatusBarHeight").on("click", function getStatusBarHeight() {
+	  console.log("111111");
+      var result = window.bridge.getStatusBarHeight(function (result) {
+        showResult(result)
+      })
+    })
+	
+	 //获取用户信息
+	$(".getUserInfo").on("click", function getUserInfo() {
+	  console.log("111111");
+      var result = window.bridge.getUserInfo({
+        userInfoType: "dealerId,token"
+      }, function (result) {
+        showResult(result)
+      })
+    })
+
+    // 点击 "测试弹出框" 按钮
+    $(".testJsconsole.log").on("click", function testJsconsole.log() {
+      console.log("测试Jsconsole.log");
+    })
+
+    // 点击 "纯图片分享按钮" 按钮
+    $(".updateImageShareButton").on("click", function updateImageShareButton() {
+      var result = window.bridge.updateShareButton({
+        shareContent: "《罗曼蒂克消亡史》12月16日上映",
+        shareImg: "https://appnfs.wepiao.com/uploads/active/20161202/11/8da54c69e38297898b9a4d8df7a944bd.jpg",
+        shareTitle: "阿娇当小五，章子怡当小六，葛大爷演的这个黑帮大佬艳福不浅",
+        platform: [{
+          type: "1",
+          shareType: "1",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/3/index.html"
+        }, {
+          type: "2",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }, {
+          type: "3",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }, {
+          type: "4",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }, {
+          type: "5",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }, {
+          type: "6",
+          shareType: "0",
+          shareUrl: "http://promotion.wepiao.com/cms_new/4462/6/index.html"
+        }]
+      }, function (result) {
+        showResult(result)
+      })
+    })
+
+    // 点击 "打开H5链接新页面" 按钮
+    $(".openH5Screen").on("click", function openH5Screen() {
+      var result = window.bridge.openH5Screen({
+        "title": "我是H5标题",
+        "url": "https://www.baidu.com/",
+        "closeCurrenScreen": "true"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+
+    $(".appRouter").on("click", function appRouter() {
+      var result = window.bridge.appRouter({
+        "url": "ttpaidea://dealer/jump_url?url=https%3a%2f%2fwww.baidu.com%2f&title=%e8%87%aa%e5%ae%9a%e4%b9%89%e6%a0%87%26%2f%e9%a2%98",
+        "finish": "true"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+    $(".appRouter1").on("click", function appRouter1() {
+      var result = window.bridge.appRouter({
+        "url": "ttpaidea://dealer/jump_url?url=https%3a%2f%2fwww.baidu.com%2f&type=1"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+    $(".appRouter2").on("click", function appRouter2() {
+      var result = window.bridge.appRouter({
+        "url": "ttpaidea://dealer/check_detail?auctionId=32535194&marketId=1004664"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+    $(".appRouter3").on("click", function appRouter3() {
+      var result = window.bridge.appRouter({
+        "url": "tel:123456789"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+    $(".appRouter4").on("click", function appRouter4() {
+      var result = window.bridge.appRouter({
+        "url": "ttpaidea://dealer/deposit"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+    $(".appRouter5").on("click", function appRouter5() {
+      var result = window.bridge.appRouter({
+        "url": "ttpaidea://dealer/id_verify"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+    $(".appRouter6").on("click", function appRouter5() {
+      var result = window.bridge.appRouter({
+        "url": "ttpaidea://dealer/member_level"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+    $(".appRouter7").on("click", function appRouter5() {
+      var result = window.bridge.appRouter({
+        "url": "ttpaidea://dealer/voucher"
+      }, function () {
+        showResult("打开成功")
+      })
+    })
+  })
+
+</script>
+
+
+</body>
+</html>
